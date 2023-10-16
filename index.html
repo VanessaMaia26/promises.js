@@ -1,17 +1,26 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Github Favorites</title>
+
+    <link rel="stylesheet" href="/style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <div id="app">
         <header>
             <h1>Github Favorites</h1>
             <div class="search">
-                <label for="input-search">Usuário do Github</label>
-                <input id="input-search" type="text" placeholder="usuário do Github">
+                <label class="sr-only" for="input-search">Github User</label>
+                <input id="input-search" type="text" placeholder="Github User">
                 <button>&plus;</button>
             </div>
         </header>
@@ -19,9 +28,9 @@
         <table>
             <thead>
                 <tr>
-                    <th>Usuário</th>
-                    <th>Repositórios</th>
-                    <th>Seguidores</th>
+                    <th>User</th>
+                    <th>Repositories</th>
+                    <th>Followers</th>
                     <th></th>
                 </tr>
             </thead>
@@ -35,13 +44,13 @@
                         </a>
                     </td>
                     <td class="repositories">
-                       111 
+                        111
                     </td>
                     <td class="followers">
                         2
                     </td>
                     <td>
-                        <button>&times;</button>
+                        <button class="remove">&times;</button>
                     </td>
                 </tr>
 
@@ -54,17 +63,18 @@
                         </a>
                     </td>
                     <td class="repositories">
-                       48 
+                        48
                     </td>
                     <td class="followers">
                         22503
                     </td>
                     <td>
-                        <button>&times;</button>
+                        <button class="remove">&times;</button>
                     </td>
                 </tr>
             </tbody>
         </table>
     </div>
 </body>
+
 </html>
